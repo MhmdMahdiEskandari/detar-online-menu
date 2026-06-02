@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url('IranNastaliq.ttf') format('ttf');
+}
+
 *{
     margin:0;
     padding:0;
@@ -5,7 +10,7 @@
 }
 
 body{
-    font-family:'Vazirmatn',sans-serif;
+    font-family:'IranNastaliq';
     direction:rtl;
 
     background:
