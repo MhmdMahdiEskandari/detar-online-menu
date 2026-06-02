@@ -117,8 +117,8 @@ body {
 }
 
 .menu-item span:last-child {
-    color: #5a2d0c;
-    font-weight: 700;
+    color: #000000;
+    font-weight: 600;
     white-space: nowrap;
     font-family: monospace;
     font-size: 18px;
