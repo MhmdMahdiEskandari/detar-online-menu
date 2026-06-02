@@ -35,6 +35,7 @@ body{
     aspect-ratio: 720 / 1024;
 	padding: 150px;
     position:relative;
+	margin: 0 auto;
 }
 
 
