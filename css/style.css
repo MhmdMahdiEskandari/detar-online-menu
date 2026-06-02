@@ -148,7 +148,7 @@ footer {
     
     .category h2 {
         font-size: 22px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     
     .menu-item {
@@ -175,12 +175,17 @@ footer {
     
     .category h2 {
         font-size: 20px;
+		height: 8vh;
     }
+	.category h2:after {
+		display: none;
+	}
     
     .menu-item {
         padding: 7px 0;
         font-size: 14px;
         gap: 8px;
+		height: 5vh;
     }
     
     .menu-item span:first-child {
