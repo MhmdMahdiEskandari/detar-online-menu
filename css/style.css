@@ -201,9 +201,6 @@ footer {
         font-size: 11px;
         margin-top: 20px;
     }
-	.menu-content {
-        padding: 32% 17% 20% 17%;
-    }
 }
 
 /* For larger screens like 4K */
@@ -239,7 +236,7 @@ footer {
         right: 0;
         bottom: 0;
         overflow: visible;
-        padding: 24% 17% 12% 17%;
+        padding: 32% 17% 20% 17%;
     }
 }
 
