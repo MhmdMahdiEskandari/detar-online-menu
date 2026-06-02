@@ -2,128 +2,137 @@
 <html lang="fa" dir="rtl">
 
 <head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>رستوران سنتی دِتَر | منوی غذاخوری</title>
+    <title>رستوران سنتی دِتَر | منوی غذاخوری - صفحه ۱</title>
     
     <!-- Favicon for browser tab -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icon.jpg">
     <link rel="apple-touch-icon" href="images/icon.jpg">
-    
-    <!-- Alternative favicon formats for better compatibility -->
     <link rel="shortcut icon" type="image/png" href="images/icon.jpg">
+    
     <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Page navigation styles */
+        .page-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        .page-btn {
+            background: #8b5a2b;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-family: 'IranNastaliq', sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .page-btn:hover {
+            background: #5a2d0c;
+            transform: scale(1.05);
+        }
+        
+        .page-btn.active {
+            background: #5a2d0c;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .page-btn {
+                padding: 8px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="menu-container">
+        <div class="menu-frame">
+            <div class="menu-content">
+                <section class="category" style="margin-top: 0;">
+                    <h2>صبحانه</h2>
 
-<div class="menu-container">
+                    <div class="menu-item">
+                        <span>املت گوجه</span>
+                        <span>۱۷۰,۰۰۰ تومان</span>
+                    </div>
 
-    <div class="menu-frame">
+                    <div class="menu-item">
+                        <span>خوراک لوبیا</span>
+                        <span>۲۱۰,۰۰۰ تومان</span>
+                    </div>
 
-    <div class="menu-content">
-    <section class="category" style="margin-top:185px;">
-        <h2>صبحانه</h2>
+                    <div class="menu-item">
+                        <span>عدسی</span>
+                        <span>۱۸۰,۰۰۰ تومان</span>
+                    </div>
 
-        <div class="menu-item">
-            <span>املت گوجه</span>
-            <span>170,000 تومان</span>
+                    <div class="menu-item">
+                        <span>نیمرو - دو تخم مرغ</span>
+                        <span>۷۰,۰۰۰ تومان</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <span>یک فلاسک چای</span>
+                        <span>۵۰,۰۰۰ تومان</span>
+                    </div>
+                </section>
+
+                <section class="category">
+                    <h2>ناهارانه</h2>
+
+                    <div class="menu-item">
+                        <span>چلو گوشت قیمه نثار قزوین</span>
+                        <span>۶۹۰,۰۰۰ تومان</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <span>چلو گوشت فسنجان</span>
+                        <span>۵۱۴,۵۰۰ تومان</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <span>چلو خورشت زرشک پلو با مرغ</span>
+                        <span>۳۱۳,۵۰۰ تومان</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <span>چلو خورشت قورمه سبزی</span>
+                        <span>۵۱۴,۵۰۰ تومان</span>
+                    </div>
+
+                    <div class="menu-item">
+                        <span>چلو خورشت قیمه</span>
+                        <span>۴۵۳,۸۰۰ تومان</span>
+                    </div>
+                </section>
+            </div>
         </div>
-
-        <div class="menu-item">
-            <span>خوراک لوبیا</span>
-            <span>210,000 تومان</span>
+        
+        <div class="page-navigation">
+            <button class="page-btn active" onclick="window.location.href='index.html'">صفحه ۱</button>
+            <button class="page-btn" onclick="window.location.href='page2.html'">صفحه ۲</button>
         </div>
-
-        <div class="menu-item">
-            <span>عدسی</span>
-            <span>180,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>نیمرو - دو تخم مرغ</span>
-            <span>70,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>یک فلاسک چای</span>
-            <span>50,000 تومان</span>
-        </div>
-
-    </section>
-
-    <section class="category">
-
-        <h2>ناهارانه</h2>
-
-        <div class="menu-item">
-            <span>چلو گوشت قیمه نثار قزوین</span>
-            <span>690,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>چلو گوشت فسنجان</span>
-            <span>514,500 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>چلو خورشت زرشک پلو با مرغ</span>
-            <span>313,500 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>چلو خورشت قورمه سبزی</span>
-            <span>514,500 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>چلو خورشت قیمه</span>
-            <span>453,800 تومان</span>
-        </div>
-
-    </section>
-
-    <section class="category">
-
-        <h2>شام</h2>
-
-        <div class="menu-item">
-            <span>کوکو سیب زمینی</span>
-            <span>150,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>کشک بادمجان</span>
-            <span>250,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>میرزا قاسمی</span>
-            <span>280,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>کله جوش</span>
-            <span>100,000 تومان</span>
-        </div>
-
-        <div class="menu-item">
-            <span>دگماج</span>
-            <span>110,000 تومان</span>
-        </div>
-
-    </section>
-</div>
-
-</div>
-    <footer>
-        <p>به رستوران سنتی اقامتگاه دِتَر خوش آمدید</p>
-    </footer>
-
-</div>
-
+        
+        <footer>
+            <p>به رستوران سنتی اقامتگاه دِتَر خوش آمدید</p>
+        </footer>
+    </div>
 </body>
+
 </html>
