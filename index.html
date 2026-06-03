@@ -59,10 +59,53 @@
                 font-size: 16px;
             }
         }
+        .intro{
+            position:fixed;
+            inset:0;
+            background:#f6f1e7;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            z-index:9999;
+            animation:fadeOut 1s ease forwards;
+            animation-delay:2.5s;
+        }
+        
+        .intro-logo{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            margin-bottom:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,.25);
+            animation:pop 1s ease;
+        }
+        
+        .hero-present{
+            font-size:32px;
+            color:#6b4b1f;
+            animation:fadeUp 1.2s ease;
+        }
+        
+        @keyframes pop{
+            from{transform:scale(.5);opacity:0;}
+            to{transform:scale(1);opacity:1;}
+        }
+        
+        @keyframes fadeOut{
+            to{
+                opacity:0;
+                visibility:hidden;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div class="intro">
+        <img src="images/icon.png" class="intro-logo" alt="دِتَر">
+        <div class="hero-present">اقامتگاه دِتَر تقدیم می‌کند</div>
+    </div>
     <div class="menu-container">
         <div class="menu-frame">
             <div class="menu-content">
