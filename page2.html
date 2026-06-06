@@ -73,22 +73,22 @@
                         <span>۱۵۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/dogmaj_kashk.png','کشک بادمجان و دگماج')">
                         <span>کشک بادمجان</span>
                         <span>۲۵۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/mirza-q_kaljoush.png','کله جوش و میرزاقاسمی')">
                         <span>میرزا قاسمی</span>
                         <span>۲۸۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/mirza-q_kaljoush.png','کله جوش و میرزاقاسمی')">
                         <span>کله جوش</span>
                         <span>۱۰۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/dogmaj_kashk.png','کشک بادمجان و دگماج')">
                         <span>دگماج</span>
                         <span>۱۱۰,۰۰۰ تومان</span>
                     </div>
@@ -105,6 +105,36 @@
             <p>به رستوران سنتی اقامتگاه دِتَر خوش آمدید</p>
         </footer>
     </div>
-</body>
+    <div id="lightbox" class="lightbox">
 
+        <span class="close-lightbox"
+              onclick="closeImage()">
+              ×
+        </span>
+    
+        <img id="lightbox-img">
+    
+        <div id="lightbox-title"></div>
+    
+    </div>
+</body>
+    <script>
+    
+        function openImage(src,title){
+        
+            document.getElementById('lightbox-img').src = src;
+        
+            document.getElementById('lightbox-title').innerText = title;
+        
+            document.getElementById('lightbox')
+                    .classList.add('show');
+        }
+        
+        function closeImage(){
+        
+            document.getElementById('lightbox')
+                    .classList.remove('show');
+        }
+    
+    </script>
 </html>
