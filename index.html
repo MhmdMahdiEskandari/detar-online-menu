@@ -99,7 +99,18 @@
                 visibility:hidden;
             }
         }
-
+        .food-item {
+            position: relative;
+            cursor: pointer;
+        }
+        .food-item::before {
+            content: "📷";
+            font-size: 15px;
+            opacity: 0.45;
+            margin-left: 6px;
+            transition: opacity 0.2s;
+        }
+        .food-item:hover::before { opacity: 1; }
         
     </style>
 </head>
