@@ -286,3 +286,12 @@ html {
 .category:last-child {
     margin-bottom: 0;
 }
+
+
+.food-item{
+    cursor:pointer;
+}
+
+.food-item:hover{
+    background:rgba(139,90,43,.08);
+}
