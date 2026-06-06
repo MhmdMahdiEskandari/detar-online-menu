@@ -112,12 +112,12 @@
                 <section class="category" style="margin-top: 0;">
                     <h2>صبحانه</h2>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/omlet.png','املت گوجه')">
                         <span>املت گوجه</span>
                         <span>۱۷۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/lubia.png','خوراک لوبیا')">
                         <span>خوراک لوبیا</span>
                         <span>۲۱۰,۰۰۰ تومان</span>
                     </div>
@@ -127,7 +127,7 @@
                         <span>۱۸۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/nimro.png','نیمرو')">
                         <span>نیمرو - دو تخم مرغ</span>
                         <span>۷۰,۰۰۰ تومان</span>
                     </div>
@@ -141,7 +141,7 @@
                 <section class="category">
                     <h2>ناهارانه</h2>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/qeime.png','چلو گوشت قیمه نثار قزوین')">
                         <span>چلو گوشت قیمه نثار قزوین</span>
                         <span>۶۹۰,۰۰۰ تومان</span>
                     </div>
@@ -151,7 +151,7 @@
                         <span>۵۱۴,۵۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item">
+                    <div class="menu-item food-item" onclick="openImage('images/zereshk-polo.png','چلو خورشت زرشک پلو با مرغ')">
                         <span>چلو خورشت زرشک پلو با مرغ</span>
                         <span>۳۱۳,۵۰۰ تومان</span>
                     </div>
@@ -178,6 +178,37 @@
             <p>به رستوران سنتی اقامتگاه دِتَر خوش آمدید</p>
         </footer>
     </div>
-</body>
 
+        <div id="lightbox" class="lightbox">
+    
+        <span class="close-lightbox"
+              onclick="closeImage()">
+              ×
+        </span>
+    
+        <img id="lightbox-img">
+    
+        <div id="lightbox-title"></div>
+    
+    </div>
+</body>
+    <script>
+    
+    function openImage(src,title){
+    
+        document.getElementById('lightbox-img').src = src;
+    
+        document.getElementById('lightbox-title').innerText = title;
+    
+        document.getElementById('lightbox')
+                .classList.add('show');
+    }
+    
+    function closeImage(){
+    
+        document.getElementById('lightbox')
+                .classList.remove('show');
+    }
+    
+    </script>
 </html>
