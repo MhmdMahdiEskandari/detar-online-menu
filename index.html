@@ -115,6 +115,10 @@
         .food-icon:hover{
             transform:scale(1.2);
         }
+        #lightbox-img {
+            opacity: 1;
+            transition: opacity .25s ease;
+        }
     </style>
 </head>
 
@@ -257,18 +261,28 @@
         
         });
     
-    function openImage(src,title){
+    function openImage(src, title) {
+
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        const caption = document.getElementById('lightbox-title');
     
-        document.getElementById('lightbox-img').src = src;
+        // Hide current image while loading
+        img.style.opacity = '0';
+        caption.innerText = title;
     
-        document.getElementById('lightbox-title').innerText = title;
+        const newImg = new Image();
     
-        document.getElementById('lightbox')
-                .classList.add('show');
+        newImg.onload = function () {
+            img.src = src;
+            img.style.opacity = '1';
+            lightbox.classList.add('show');
+        };
+    
+        newImg.src = src;
     }
     
-    function closeImage(){
-    
+    function closeImage() {
         document.getElementById('lightbox')
                 .classList.remove('show');
     }
