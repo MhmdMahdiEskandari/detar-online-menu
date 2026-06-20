@@ -99,7 +99,22 @@
                 visibility:hidden;
             }
         }
+        .food-name{
+            display:flex;
+            align-items:center;
+            gap:8px;
+        }
         
+        .food-icon{
+            cursor:pointer;
+            font-size:18px;
+            transition:0.3s;
+            user-select:none;
+        }
+        
+        .food-icon:hover{
+            transform:scale(1.2);
+        }
     </style>
 </head>
 
@@ -114,13 +129,23 @@
                 <section class="category" style="margin-top: 0;">
                     <h2>صبحانه</h2>
 
-                    <div class="menu-item food-item" onclick="openImage('images/omlet.png','املت گوجه')">
-                        <span>املت گوجه</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>املت گوجه</span>
+                            <span class="food-icon" onclick="openImage('images/omlet.png','املت گوجه')">
+                                📷
+                            </span>
+                        </div>
                         <span>۱۷۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/lubia.png','خوراک لوبیا')">
-                        <span>خوراک لوبیا</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>خوراک لوبیا</span>
+                            <span class="food-icon" onclick="openImage('images/lubia.png','خوراک لوبیا')">
+                                📷
+                            </span>
+                        </div>
                         <span>۲۱۰,۰۰۰ تومان</span>
                     </div>
 
@@ -129,8 +154,13 @@
                         <span>۱۸۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/nimro.png','نیمرو')">
-                        <span>نیمرو - دو تخم مرغ</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>نیمرو - دو تخم مرغ</span>
+                            <span class="food-icon" onclick="openImage('images/nimro.png','نیمرو')">
+                                📷
+                            </span>
+                        </div>
                         <span>۷۰,۰۰۰ تومان</span>
                     </div>
 
@@ -143,8 +173,13 @@
                 <section class="category">
                     <h2>ناهارانه</h2>
 
-                    <div class="menu-item food-item" onclick="openImage('images/qeime.png','چلو گوشت قیمه نثار قزوین')">
-                        <span>چلو گوشت قیمه نثار قزوین</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>چلو گوشت قیمه نثار قزوین</span>
+                            <span class="food-icon" onclick="openImage('images/qeime.png','چلو گوشت قیمه نثار قزوین')">
+                                📷
+                            </span>
+                        </div>
                         <span>۶۹۰,۰۰۰ تومان</span>
                     </div>
 
@@ -153,8 +188,13 @@
                         <span>۵۱۴,۵۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/zereshk-polo.png','چلو خورشت زرشک پلو با مرغ')">
-                        <span>چلو خورشت زرشک پلو با مرغ</span>
+                    <div class="menu-item" >
+                        <div class="food-name">
+                            <span>چلو خورشت زرشک پلو با مرغ</span>
+                            <span class="food-icon" onclick="openImage('images/zereshk-polo.png','چلو خورشت زرشک پلو با مرغ')">
+                                📷
+                            </span>
+                        </div>
                         <span>۳۱۳,۵۰۰ تومان</span>
                     </div>
 
