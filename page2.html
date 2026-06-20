@@ -74,6 +74,10 @@
         .food-icon:hover {
             transform:scale(1.2);
         }
+        #lightbox-img {
+            opacity: 1;
+            transition: opacity .25s ease;
+        }
     </style>
 </head>
 
@@ -168,7 +172,7 @@
     <script>
     
         function openImage(src,title){
-        
+    
             document.getElementById('lightbox-img').src = src;
         
             document.getElementById('lightbox-title').innerText = title;
@@ -182,6 +186,7 @@
             document.getElementById('lightbox')
                     .classList.remove('show');
         }
+        
     
     </script>
 </html>
