@@ -58,6 +58,22 @@
                 font-size: 16px;
             }
         }
+        .food-name {
+            display:flex;
+            align-items:center;
+            gap:8px;
+        }
+        
+        .food-icon {
+            cursor:pointer;
+            font-size:18px;
+            transition:0.3s;
+            user-select:none;
+        }
+        
+        .food-icon:hover {
+            transform:scale(1.2);
+        }
     </style>
 </head>
 
@@ -73,23 +89,54 @@
                         <span>۱۵۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/dogmaj_kashk.png','کشک بادمجان و دگماج')">
-                        <span>کشک بادمجان</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>کشک بادمجان</span>
+                    
+                            <span class="food-icon" onclick="openImage('images/dogmaj_kashk.png','کشک بادمجان')">
+                                📷
+                            </span>
+                        </div>
+                    
                         <span>۲۵۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/mirza-q_kaljoush.png','کله جوش و میرزاقاسمی')">
-                        <span>میرزا قاسمی</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>میرزا قاسمی</span>
+                    
+                            <span class="food-icon"
+                                  onclick="openImage('images/mirza-q_kaljoush.png','میرزا قاسمی')">
+                                📷
+                            </span>
+                        </div>
+                    
                         <span>۲۸۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/kalejoush.png','کله جوش')">
-                        <span>کله جوش</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>کله جوش</span>
+
+                            <span class="food-icon"
+                                  onclick="openImage('images/kalejoush.png','کله جوش')">
+                                📷
+                            </span>
+                        </div>
+                        
                         <span>۱۰۰,۰۰۰ تومان</span>
                     </div>
 
-                    <div class="menu-item food-item" onclick="openImage('images/dogmaj.png','دگماج')">
-                        <span>دگماج (دویماج)</span>
+                    <div class="menu-item">
+                        <div class="food-name">
+                            <span>دگماج (دویماج)</span>
+
+                            <span class="food-icon"
+                                  onclick="openImage('images/dogmaj.png','دگماج')">
+                                📷
+                            </span>
+                            
+                        </div>
                         <span>۱۱۰,۰۰۰ تومان</span>
                     </div>
                 </section>
