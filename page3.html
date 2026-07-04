@@ -160,14 +160,25 @@
 </body>
     <script>
     
-        function openImage(src,title){
+        function openImage(src, title) {
     
-            document.getElementById('lightbox-img').src = src;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-title');
         
-            document.getElementById('lightbox-title').innerText = title;
+            // Hide current image while loading
+            img.style.opacity = '0';
+            caption.innerText = title;
         
-            document.getElementById('lightbox')
-                    .classList.add('show');
+            const newImg = new Image();
+        
+            newImg.onload = function () {
+                img.src = src;
+                img.style.opacity = '1';
+                lightbox.classList.add('show');
+            };
+        
+            newImg.src = src;
         }
         
         function closeImage(){
